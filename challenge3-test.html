@@ -1,0 +1,232 @@
+ <!DOCTYPE html>
+
+<html>
+	<style>
+	
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: inline;
+  background: #ffc6a5;
+}
+#header-img{
+max-width:300px;
+max-height:100px;
+}		
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline;
+float: left;
+}
+
+
+a{
+float: right;
+display: inline;
+font-size:20px;
+ color: #000;
+ text-align: center;
+ padding: 14px 16px;
+  text-decoration: none;
+}
+a:hover{
+background-color:#ff8f50;
+}
+
+@media(max-width:520px) {
+a{display:none;}
+}
+			
+body{
+ background-color: #f6f6f6;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', Arial, sans-serif;
+  
+    color: #000;
+	  text-align: center;
+}
+#container{
+	border-radius: 10px;
+	max-width: 900px;
+	margin: 80px auto 50px auto;
+	text-align: left;
+	
+	color: #000;
+}
+
+h1{
+text-align:center;
+font-size:25px;
+}
+form{
+text-align:center;
+}
+#email{
+width:300px;
+height:50px;}
+#submit{
+width:300px;
+height:40px;
+background-color:#ffa572;
+}
+
+
+.logo{
+width: 60px;
+height:60px;
+padding: 40px 0 ;
+justify-self: stretch;
+}
+@media(max-width:520px) {
+.logo{display:none;}
+}
+#Features{
+	margin: 50px auto;
+	display:grid;
+	grid-template-columns: 100px 800px;
+    grid-template-areas:
+      "img1 desc1 "
+      "img2 desc2 "
+      "img3 desc3 ";
+}
+   h4 {
+    text-align: center;
+    background-color: #d35b2a;
+	color: #eee;
+	margin:0;
+
+  }
+ .cardText{
+    text-align: center;
+  }
+	.fullCard {
+    width: 245px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+	
+  }
+  #Pricing{
+  display:grid;
+  margin: 0 auto;
+  grid-gap: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-bottom: 30px;
+  } 
+ .slectButton{
+ width: 240px;
+ height: 40px;
+ background-color: #fdaea3;
+ } 
+ #HowItWorks{
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  margin-bottom: 50px;
+ }
+ #footer{
+	max-width: 800px;
+	margin: 0 auto 0 auto;
+	text-align: right;	
+	color: #000;
+	background-color:#ffc6a5;
+ }
+ 
+ </style>
+
+<body>
+
+	<header id="header">
+	<img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="original Trombones logo" >
+	<nav id="nav-bar">
+        <a class="nav-link" href="#Features">Features</a>
+        <a class="nav-link"  href="#HowItWorks">How It Works</a>
+        <a class="nav-link"  href="#Pricing">Pricing</a>
+    </nav>
+	</header>
+ 
+  <div id="container">
+
+	 <h1> Handcrafted, home-made masterpieces </h1>
+	 <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input type="email" id="email"  name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email" required><br/><br/> 
+		   <input type="submit" id="submit" value="Submit"><br/>
+	 </form> <br/><br/>
+	 
+  	<section id="Features">
+	  <div>
+		 <img class="logo" src="https://e7.pngegg.com/pngimages/359/699/png-clipart-favicon-computer-icons-icon-design-share-icon-globalization-text-logo.png" alt="original feater1 logo" >
+	  </div>
+	  <div>
+		 <h3>Premium Materials</h3>
+		 <div><p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. <p></div>
+	 </div>
+	<div>
+		 <img class="logo" src="https://img.favpng.com/2/22/21/computer-icons-home-page-favicon-website-png-favpng-AERnWJireKVXw5iuftuANf4dA.jpg" alt="original feater2 logo" >
+	</div>
+	<div>
+		 <h3>Fast Shipping</h3>
+		 <div><p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied. <p></div>
+		
+	</div><div>	
+		 <img class="logo" src="https://img.favpng.com/20/20/12/computer-icons-favicon-science-iconfinder-png-favpng-Fsyg7qgB3QwTWmHEThnpi3qza.jpg" alt="original feater2 logo" >
+		 </div><div>
+		 <h3>Quality Assurance</h3>
+		 <div><p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument. <p></div>
+		</div>
+    </section>
+	<section id="HowItWorks">
+		<iframe id="video" width="420" height="345"  src="https://www.youtube.com/watch?v=xa17zHJhNhA">
+		</iframe>
+	</section>	
+	<section id="Pricing">
+       <div class="fullCard">
+			<div class="cardContent">
+				<div class="cardText">
+				  <h4>Tenor Trombone</h4>
+				  <p><strong style="font-size:20px">600$</strong><br/>Lorem ipsum.<br/>Lorem ipsum.<br/>Lorem ipsum dolor.<br/>Lorem ipsum.<br/></p>
+				  <button class="slectButton" href="/">select</button><br/>
+				</div>
+			</div>
+	    </div>
+		 <div class="fullCard">
+			<div class="cardContent">
+				<div class="cardText">
+				  <h4>Valve Trombone</h4>
+				  <p><strong style="font-size:20px">900$</strong><br/>Lorem ipsum.<br/>Lorem ipsum.<br/>Lorem ipsum dolor.<br/>Lorem ipsum.<br/></p>
+				  <button class="slectButton" href="/">select</button><br/>
+				</div>
+			</div>
+	    </div>
+		 <div class="fullCard">
+			<div class="cardContent">
+				<div class="cardText">
+				  <h4>Bass Trombone</h4>
+				  <p><strong style="font-size:20px">1200$</strong><br/>Lorem ipsum.<br/>Lorem ipsum.<br/>Lorem ipsum dolor.<br/>Lorem ipsum.<br/></p>
+				  <button class="slectButton" href="/">select</button><br/>
+				</div>
+			</div>
+	    </div>
+	</section>
+	
+	</div>
+  
+
+  	<footer id="footer">
+	<div id="footer-bar">
+        <a class="footer-link" href="#">Privacy</a>
+        <a class="footer-link"  href="#">terms</a>
+        <a class="footer-link"  href="#">contract</a>
+    </div><br/>
+	<p id="copyrights">Copyright 2016, Original Trombones</p>
+	
+	</footer>
+
+
+</body>
+
+</html>
